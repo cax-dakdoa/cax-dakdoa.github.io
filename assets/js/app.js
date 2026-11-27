@@ -1,51 +1,23 @@
-const steps = [
-  {kicker:"BƯỚC 01 · TRUY CẬP CHỨC NĂNG",title:"Mở ứng dụng VNeID và chọn “Ví giấy tờ”",desc:"Đăng nhập tài khoản định danh điện tử mức độ 2 đang hoạt động. Tại màn hình chính, chọn “Ví giấy tờ”.",tip:"Chỉ thao tác trên điện thoại của chính công dân. Không cung cấp mật khẩu, passcode hoặc OTP cho người khác.",menu:["Ví giấy tờ","An sinh xã hội"]},
-  {kicker:"BƯỚC 02 · TẠO YÊU CẦU",title:"Chọn “Tích hợp giấy tờ” và “Tạo mới yêu cầu”",desc:"Trong Ví giấy tờ, mở chức năng Tích hợp giấy tờ, sau đó chọn Tạo mới yêu cầu. Chọn nhóm thông tin tài khoản theo giao diện ứng dụng.",tip:"Nếu tên mục trên điện thoại khác với hướng dẫn, hãy đọc kỹ nội dung trên VNeID và tham khảo hướng dẫn chính thức.",menu:["Tích hợp giấy tờ","Tạo mới yêu cầu"]},
-  {kicker:"BƯỚC 03 · KHAI BÁO THÔNG TIN",title:"Chọn nhà cung cấp và nhập thông tin tài khoản",desc:"Chọn loại thông tin tài khoản thanh toán; chọn nhà cung cấp phù hợp và nhập số tài khoản/thẻ/ví theo yêu cầu. Kiểm tra chính xác trước khi xác nhận.",tip:"Chỉ nhập thông tin trên ứng dụng VNeID chính thức. Không gửi số tài khoản, ảnh chụp giấy tờ hoặc thông tin ngân hàng vào website hướng dẫn này.",menu:["Thông tin tài khoản","Nhà cung cấp"]},
-  {kicker:"BƯỚC 04 · GỬI VÀ THEO DÕI",title:"Xác nhận và gửi yêu cầu tích hợp",desc:"Đọc lại thông tin, tích xác nhận thông tin đã khai báo là đúng và nhấn Gửi yêu cầu. Theo dõi kết quả tra cứu, đối chiếu trên VNeID.",tip:"Gửi yêu cầu thành công không đồng nghĩa dữ liệu đã được phê duyệt ngay. Hãy kiểm tra trạng thái xử lý trong ứng dụng.",menu:["Kiểm tra thông tin","Gửi yêu cầu"]},
-  {kicker:"BƯỚC 05 · CHỌN TÀI KHOẢN HƯỞNG ASXH",title:"Đặt tài khoản vừa tích hợp làm tài khoản hưởng ASXH",desc:"Khi tài khoản thanh toán đã hiển thị trong VNeID, chọn tài khoản đó và chọn “Chọn làm tài khoản hưởng An sinh xã hội” hoặc mục liên kết tương ứng trong phần tùy chỉnh thông tin. Xác nhận và xác thực theo yêu cầu.",tip:"Có thể cần passcode hoặc xác thực vân tay/khuôn mặt tùy thiết bị. Công dân tự thực hiện bước xác thực, không đọc mã cho người hỗ trợ.",menu:["Chọn làm tài khoản hưởng ASXH","Xác nhận liên kết"]}
+const steps=[
+{tag:"BƯỚC 1 / 5",emoji:"🏠",title:"Tìm mục An sinh xã hội trên màn hình chính",summary:"Sau khi đăng nhập VNeID mức độ 2, mục An sinh xã hội nằm trong phần Nhóm dịch vụ trên màn hình Trang chủ.",image:"assets/images/vneid-01-man-hinh-chinh.jpg",alt:"Màn hình chính VNeID, đã làm mờ thông tin cá nhân",caption:"Mục “An sinh xã hội” nằm trong Nhóm dịch vụ trên màn hình chính.",items:["Mở ứng dụng VNeID và đăng nhập tài khoản định danh điện tử mức độ 2.","Quan sát phần “Nhóm dịch vụ” trên màn hình chính.","Tìm và chạm vào biểu tượng “An sinh xã hội”.","Để khai báo tài khoản thanh toán theo các ảnh hướng dẫn, tiếp tục chuyển sang tab “Ví giấy tờ” ở thanh công cụ phía dưới."],path:"Trang chủ → Nhóm dịch vụ → An sinh xã hội. Để thêm tài khoản thanh toán: chuyển sang Ví giấy tờ.",tip:"Mục An sinh xã hội trên Trang chủ là nơi truy cập dịch vụ. Biểu mẫu thêm tài khoản thanh toán được mở từ Ví giấy tờ → Tích hợp giấy tờ."},
+{tag:"BƯỚC 2 / 5",emoji:"🗂️",title:"Mở Ví giấy tờ và chọn Tích hợp giấy tờ",summary:"Từ thanh công cụ ở cuối màn hình, mở Ví giấy tờ. Tại đây chọn chức năng Tích hợp giấy tờ để thêm tài khoản thanh toán.",image:"assets/images/vneid-04-vi-giay-to.jpg",alt:"Màn hình Ví giấy tờ VNeID, đã làm mờ ảnh trên thẻ",caption:"Trong Ví giấy tờ, chạm ô “Tích hợp giấy tờ”.",items:["Chạm “Ví giấy tờ” ở thanh điều hướng dưới cùng màn hình.","Trong phần “Tích hợp và xuất trình”, chạm ô “Tích hợp giấy tờ”.","Chạm vào ô “Loại thông tin” để mở danh sách lựa chọn.","Tìm và chọn “Tài khoản thanh toán”."],path:"Thanh điều hướng dưới cùng → Ví giấy tờ → Tích hợp giấy tờ → Loại thông tin → Tài khoản thanh toán.",tip:"Trong danh sách có nhiều mục khác nhau. Hãy chọn đúng dòng “Tài khoản thanh toán” như ảnh minh họa."},
+{tag:"BƯỚC 3 / 5",emoji:"🏦",title:"Chọn Tài khoản thanh toán và khai báo",summary:"Biểu mẫu sẽ hiện các trường Nhà cung cấp, Số tài khoản/thẻ/ví và câu hỏi có chọn làm tài khoản An sinh xã hội hay không.",image:"assets/images/vneid-03-khai-bao.jpg",alt:"Biểu mẫu khai báo tài khoản thanh toán trên VNeID",caption:"Biểu mẫu khai báo tài khoản thanh toán. Lưu ý chọn “Có” tại câu hỏi chọn làm tài khoản An sinh xã hội.",items:["Tại “Nhà cung cấp”, chạm “Chọn thông tin” và chọn đúng ngân hàng/đơn vị cung cấp.","Tại “Số tài khoản/thẻ/ví”, nhập số tương ứng theo yêu cầu của ứng dụng.","Ở câu hỏi “Chọn làm tài khoản An sinh xã hội?”, chọn “CÓ” nếu muốn dùng tài khoản này để nhận tiền an sinh xã hội.","Kiểm tra lại toàn bộ thông tin đã nhập."],path:"Loại thông tin: Tài khoản thanh toán → Nhà cung cấp → Số tài khoản/thẻ/ví → Chọn làm tài khoản An sinh xã hội: CÓ.",tip:"Ảnh mẫu đang đánh dấu “Không”. Khi thực hiện, hãy chọn “Có” nếu muốn dùng tài khoản này làm tài khoản nhận an sinh xã hội."},
+{tag:"BƯỚC 4 / 5",emoji:"📨",title:"Xác nhận thông tin và nhấn Gửi yêu cầu",summary:"Kiểm tra nội dung đã khai báo, tích xác nhận thông tin chính xác rồi gửi yêu cầu.",image:"assets/images/vneid-03-khai-bao.jpg",alt:"Biểu mẫu xác nhận và gửi yêu cầu trên VNeID",caption:"Tích ô xác nhận thông tin chính xác rồi nhấn nút “Gửi yêu cầu”.",items:["Tích vào ô “Tôi xác nhận các thông tin ở trên là đúng”.","Kiểm tra lại thông tin tài khoản một lần nữa.","Chạm nút đỏ “Gửi yêu cầu” ở cuối màn hình.","Chờ ứng dụng thông báo đã tiếp nhận yêu cầu."],path:"Cuối biểu mẫu → ô xác nhận thông tin → nút “Gửi yêu cầu”.",tip:"Chỉ tích xác nhận khi thông tin chính xác. Nếu phát hiện sai, quay lại sửa trước khi gửi."},
+{tag:"BƯỚC 5 / 5",emoji:"✅",title:"Theo dõi trạng thái tích hợp trong Ví giấy tờ",summary:"Sau khi gửi yêu cầu, quay lại Ví giấy tờ để kiểm tra thông báo chờ xác nhận hoặc trạng thái xử lý.",image:"assets/images/vneid-04-vi-giay-to.jpg",alt:"Màn hình Ví giấy tờ VNeID",caption:"Ví giấy tờ có thể hiển thị thông báo thông tin đang chờ xác nhận tích hợp.",items:["Chạm tab “Ví giấy tờ” ở thanh công cụ phía dưới.","Quan sát thông báo màu đỏ về thông tin đang chờ xác nhận tích hợp (nếu có).","Chạm vào thông báo hoặc mục liên quan để xem và thực hiện xác nhận theo yêu cầu của VNeID.","Kiểm tra lại trạng thái; chỉ coi là hoàn tất khi ứng dụng hiển thị kết quả phù hợp."],path:"Ví giấy tờ → thông báo chờ xác nhận tích hợp → thực hiện xác nhận theo hướng dẫn.",tip:"Gửi yêu cầu thành công chưa chắc đã hoàn tất tích hợp. Hãy truy cập thông báo chờ xác nhận và làm theo hướng dẫn trên ứng dụng."}
 ];
-let currentStep = 0;
-const $ = s => document.querySelector(s);
-const $$ = s => [...document.querySelectorAll(s)];
+let current=0;const $=id=>document.getElementById(id);
 function renderStep(){
-  const s=steps[currentStep];
-  $("#detailKicker").textContent=s.kicker;
-  $("#stepNumber").textContent=String(currentStep+1).padStart(2,"0");
-  $("#stepTitle").textContent=s.title;
-  $("#stepDescription").textContent=s.desc;
-  $("#stepTip").innerHTML="<b>Lưu ý:</b> "+s.tip;
-  $("#progressText").textContent=`Bước ${currentStep+1}/5`;
-  $("#progressBar").style.width=((currentStep+1)*20)+"%";
-  $("#prevStep").disabled=currentStep===0;
-  $("#nextStep").textContent=currentStep===4?"Xem lại từ đầu ↺":"Bước tiếp theo →";
-  $$(".step-tab").forEach((b,i)=>b.classList.toggle("active",i===currentStep));
-  $$("#stepDots span").forEach((d,i)=>d.classList.toggle("on",i===currentStep));
-  const illustration=$("#stepIllustration");
-  illustration.innerHTML=`<div class="mock-phone"><div class="mock-bar"></div><div class="mock-line short"></div><div class="mock-menu selected"><span>▣</span><b>${s.menu[0]}</b><i>›</i></div><div class="mock-menu"><span>♡</span><b>${s.menu[1]}</b><i>›</i></div><div class="mock-line"></div><div class="mock-line mid"></div></div><div class="tap-hint">Thao tác theo hướng dẫn trên VNeID</div>`;
+ const s=steps[current];
+ $("stepCount").textContent=s.tag;$("stepEmoji").textContent=s.emoji;$("stepTitle").textContent=s.title;$("stepSummary").textContent=s.summary;
+ $("stepImage").src=s.image;$("stepImage").alt=s.alt;$("stepCaption").textContent=s.caption;
+ $("stepInstructions").innerHTML=s.items.map(item=>`<li>${item}</li>`).join("");
+ $("stepPath").textContent=s.path;$("stepTip").textContent=s.tip;
+ $("progressBar").style.width=((current+1)*20)+"%";
+ $("previousStep").disabled=current===0;
+ $("nextStep").textContent=current===steps.length-1?"XEM LẠI TỪ ĐẦU ↺":"BƯỚC TIẾP THEO →";
+ document.querySelectorAll(".step-button").forEach((button,index)=>button.classList.toggle("active",index===current));
 }
-$$(".step-tab").forEach(b=>b.addEventListener("click",()=>{currentStep=Number(b.dataset.step);renderStep()}));
-$("#prevStep").addEventListener("click",()=>{if(currentStep>0){currentStep--;renderStep()}});
-$("#nextStep").addEventListener("click",()=>{currentStep=currentStep===4?0:currentStep+1;renderStep()});
-
-const docInfo={
- birth:{title:"Giấy khai sinh",intro:"Tích hợp thông tin hộ tịch để thuận tiện tra cứu và sử dụng trong các thủ tục phù hợp.",steps:["Mở VNeID và đăng nhập tài khoản của công dân.","Vào Ví giấy tờ → Tích hợp giấy tờ → Tạo mới yêu cầu (nếu chức năng hiển thị theo lộ trình này).","Chọn loại thông tin Giấy khai sinh và thực hiện khai báo/đối chiếu theo yêu cầu của ứng dụng.","Gửi yêu cầu và theo dõi kết quả xử lý trên VNeID."]},
- payment:{title:"Thông tin tài khoản thanh toán",intro:"Có thể bao gồm thông tin thẻ ngân hàng, tài khoản thanh toán, ví điện tử hoặc tài khoản tiền di động theo danh mục nhà cung cấp được ứng dụng hỗ trợ.",steps:["Đăng nhập VNeID bằng tài khoản định danh điện tử mức độ 2 đang hoạt động.","Chọn Ví giấy tờ → Tích hợp giấy tờ → Tạo mới yêu cầu.","Chọn loại thông tin Tài khoản; chọn nhà cung cấp và nhập số tài khoản/thẻ/ví theo yêu cầu.","Xác nhận thông tin chính xác, nhấn Gửi yêu cầu và theo dõi kết quả."]},
- social:{title:"Tài khoản hưởng an sinh xã hội",intro:"Đây là nội dung ưu tiên. Tài khoản thanh toán đã tích hợp có thể được lựa chọn làm tài khoản nhận các khoản chi trả an sinh xã hội theo hướng dẫn hiện hành.",steps:["Đảm bảo tài khoản định danh điện tử mức độ 2 đang hoạt động và đã có tài khoản thanh toán được tích hợp/hiển thị trên VNeID.","Mở thông tin tài khoản thanh toán vừa tích hợp.","Chọn “Chọn làm tài khoản hưởng An sinh xã hội” hoặc mở phần tùy chỉnh thông tin → “Liên kết tài khoản hưởng An sinh xã hội” (tên mục có thể khác theo phiên bản).","Nhấn xác nhận và xác thực bằng passcode hoặc sinh trắc học theo yêu cầu của ứng dụng.","Kiểm tra mục An sinh xã hội để xác nhận tài khoản đã được đánh dấu là tài khoản hưởng ASXH."]},
- mobile:{title:"Thông tin thuê bao di động",intro:"Thông tin thuê bao di động được đối chiếu với dữ liệu của doanh nghiệp viễn thông và hệ thống có thẩm quyền.",steps:["Cập nhật VNeID lên phiên bản mới nhất và đăng nhập tài khoản của công dân.","Mở Ví giấy tờ → Tích hợp thông tin/giấy tờ và kiểm tra danh mục loại thông tin đang được hỗ trợ.","Chọn thông tin thuê bao di động nếu có; thực hiện chọn nhà mạng hoặc khai báo theo hướng dẫn hiển thị.","Gửi yêu cầu và theo dõi trạng thái. Nếu thông tin chưa chính xác, liên hệ nhà mạng để rà soát chính chủ."]},
- health:{title:"Sổ sức khỏe điện tử",intro:"Sổ sức khỏe điện tử hỗ trợ hiển thị thông tin sức khỏe được liên thông từ các hệ thống y tế theo phạm vi dữ liệu được chia sẻ.",steps:["Đăng nhập VNeID bằng tài khoản của chính công dân.","Tìm chức năng Sổ sức khỏe điện tử trong nhóm tiện ích/dịch vụ trên ứng dụng.","Kiểm tra thông tin cá nhân và dữ liệu sức khỏe được hiển thị.","Nếu dữ liệu thiếu hoặc sai, liên hệ cơ sở khám chữa bệnh/cơ quan y tế có thẩm quyền để rà soát nguồn dữ liệu."]}
-};
-const modal=$("#docModal");
-$$(".doc-open").forEach(b=>b.addEventListener("click",()=>{
- const d=docInfo[b.dataset.doc];$("#modalTitle").textContent=d.title;$("#modalIntro").textContent=d.intro;
- $("#modalSteps").innerHTML=d.steps.map(x=>`<li>${x}</li>`).join("");
- modal.classList.add("show");modal.setAttribute("aria-hidden","false");$("#modalClose").focus();
-}));
-function closeModal(){modal.classList.remove("show");modal.setAttribute("aria-hidden","true")}
-$("#modalClose").addEventListener("click",closeModal);$("#modalDone").addEventListener("click",closeModal);
-modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
-$("#menuToggle").addEventListener("click",()=>{const nav=$("#mainNav");const open=nav.classList.toggle("open");$("#menuToggle").setAttribute("aria-expanded",String(open))});
-$$(".main-nav a").forEach(a=>a.addEventListener("click",()=>{$("#mainNav").classList.remove("open");$("#menuToggle").setAttribute("aria-expanded","false")}));
-$("#year").textContent=new Date().getFullYear();
+document.querySelectorAll(".step-button").forEach(button=>button.addEventListener("click",()=>{current=Number(button.dataset.step);renderStep()}));
+$("previousStep").addEventListener("click",()=>{if(current>0){current--;renderStep()}});
+$("nextStep").addEventListener("click",()=>{current=current===steps.length-1?0:current+1;renderStep();$("huong-dan").scrollIntoView({behavior:"smooth",block:"start"})});
 renderStep();

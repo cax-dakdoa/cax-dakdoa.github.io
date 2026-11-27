@@ -1,36 +1,21 @@
-# Cổng hướng dẫn Công dân số Đak Đoa
+# Công an xã Đak Đoa – Hướng dẫn tích hợp tài khoản an sinh xã hội
 
-Bản mẫu website tĩnh, responsive, tập trung hướng dẫn người dân tích hợp 5 nhóm thông tin cơ bản trên VNeID; ưu tiên tài khoản hưởng an sinh xã hội.
+## Triển khai
+1. Giải nén file ZIP.
+2. Mở thư mục `dakdoa-congdan-so`.
+3. Upload toàn bộ nội dung bên trong thư mục này lên thư mục gốc repository GitHub Pages.
+4. Giữ nguyên cấu trúc `assets/css`, `assets/js`, `assets/images`.
 
-## Cấu trúc
-- `index.html`: nội dung và cấu trúc trang
-- `assets/css/style.css`: giao diện, responsive cho điện thoại/máy tính
-- `assets/js/app.js`: chuyển bước hướng dẫn, cửa sổ hướng dẫn 5 nhóm thông tin, menu di động
-- `README.md`: hướng dẫn cài đặt
+## Thành phần
+- `index.html`: trang hướng dẫn.
+- `assets/css/style.css`: giao diện tối ưu điện thoại, màu sắc đa dạng, nút bo tròn.
+- `assets/js/app.js`: điều hướng 5 bước.
+- `assets/images/`: 4 ảnh VNeID người dùng cung cấp; ảnh nhận dạng cá nhân đã được làm mờ.
 
-## Chạy thử trên máy tính
-Mở trực tiếp `index.html` bằng Chrome/Edge. Website không cần cài Node.js, không cần máy chủ và không có backend.
+## Liên hệ
+- Trực ban Công an xã Đak Đoa: 0905 211 699 hoặc 0269 383 1114.
+- Form liên hệ gửi họ tên và số điện thoại đến `nguyenkkcao@icloud.com` qua FormSubmit.
+- FormSubmit cần xác nhận email kích hoạt lần đầu. Thông tin biểu mẫu đi qua dịch vụ bên thứ ba.
 
-## Đưa lên GitHub Pages
-1. Giải nén ZIP.
-2. Mở repository GitHub của đơn vị.
-3. Upload toàn bộ nội dung bên trong thư mục `dakdoa-congdan-so` lên thư mục gốc repository (để `index.html` nằm ngay thư mục gốc).
-4. Commit changes.
-5. Vào Settings → Pages → Deploy from a branch → `main` → `/(root)` → Save.
-6. Chờ GitHub Pages triển khai, sau đó mở URL được GitHub hiển thị.
-
-## Cấu hình trước khi công bố
-- Xác minh tên gọi cơ quan, địa giới hành chính, số điện thoại, địa điểm hỗ trợ và người chịu trách nhiệm nội dung.
-- Thay nội dung “điểm hỗ trợ” bằng lịch/địa điểm đã được đơn vị phê duyệt.
-- Kiểm tra lại quy trình VNeID trên phiên bản ứng dụng đang triển khai tại thời điểm công bố.
-- Chỉ công bố với danh nghĩa Công an xã sau khi được người có thẩm quyền phê duyệt.
-- Kiểm tra giấy phép, quyền sử dụng ảnh/logo và nội dung từ các nguồn bên ngoài. Bản mẫu không sử dụng logo chính thức của lực lượng Công an.
-
-## An toàn dữ liệu
-Website chỉ cung cấp hướng dẫn tĩnh. Không có form thu thập dữ liệu, không lưu CCCD, số tài khoản ngân hàng, mật khẩu, passcode, OTP hoặc dữ liệu sức khỏe. Không thêm các trường dữ liệu nhạy cảm vào website công khai.
-
-## Lưu ý nội dung
-Giao diện VNeID và tên chức năng có thể thay đổi. Hướng dẫn tài khoản thanh toán/ASXH được xây dựng theo thông tin công bố của Cổng Thông tin điện tử Chính phủ và nguồn cơ quan nhà nước trong năm 2026. Luôn rà soát lại hướng dẫn chính thức trước khi phát hành.
-
-## Giao diện
-Bản cập nhật bổ sung hệ thống nút bo tròn có hiệu ứng nổi 3D (hover/nhấn), tăng độ rõ của các thẻ hướng dẫn, trạng thái bước và hiệu ứng focus cho bàn phím. Có hỗ trợ prefers-reduced-motion.
+## Lưu ý
+Website là trang hướng dẫn tĩnh, không lưu dữ liệu trên GitHub Pages. Không yêu cầu người dân nhập CCCD, mật khẩu, OTP, passcode hoặc số tài khoản vào biểu mẫu liên hệ. Quy trình và giao diện VNeID có thể thay đổi theo phiên bản; cần kiểm tra lại trước khi phát hành rộng rãi.
