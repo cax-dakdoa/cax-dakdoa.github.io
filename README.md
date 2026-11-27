@@ -10,7 +10,7 @@
 - `index.html`: trang hướng dẫn.
 - `assets/css/style.css`: giao diện tối ưu điện thoại, màu sắc đa dạng, nút bo tròn.
 - `assets/js/app.js`: điều hướng 5 bước.
-- `assets/images/`: 4 ảnh VNeID người dùng cung cấp; ảnh nhận dạng cá nhân đã được làm mờ.
+- `assets/images/`: ảnh minh họa các bước VNeID; bước 4 có ảnh nhấn mạnh lựa chọn “CÓ” làm tài khoản An sinh xã hội.
 
 ## Liên hệ
 - Trực ban Công an xã Đak Đoa: 0905 211 699 hoặc 0269 383 1114.
